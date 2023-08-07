@@ -1,5 +1,7 @@
-package com.example.kotlintodopractice.fragments
+package com.example.tasktracker.fragments
 
+
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,10 +9,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.kotlintodopractice.databinding.FragmentHomeBinding
-import com.example.kotlintodopractice.utils.adapter.TaskAdapter
-import com.example.kotlintodopractice.utils.model.ToDoData
+import com.example.tasktracker.R
+
+import com.example.tasktracker.utils.adapter.TaskAdapter
+import com.example.tasktracker.utils.model.ToDoData
+import com.example.tasktracker.databinding.FragmentHomeBinding
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -22,7 +28,7 @@ import com.google.firebase.ktx.Firebase
 
 class HomeFragment : Fragment(), ToDoDialogFragment.OnDialogNextBtnClickListener,
     TaskAdapter.TaskAdapterInterface {
-
+    private lateinit var navController: NavController
     private val TAG = "HomeFragment"
     private lateinit var binding: FragmentHomeBinding
     private lateinit var database: DatabaseReference
@@ -48,6 +54,7 @@ class HomeFragment : Fragment(), ToDoDialogFragment.OnDialogNextBtnClickListener
         init()
 
         //get data from firebase
+        //get data from firebase
         getTaskFromFirebase()
 
 
@@ -64,6 +71,8 @@ class HomeFragment : Fragment(), ToDoDialogFragment.OnDialogNextBtnClickListener
             )
 
         }
+
+
     }
 
     private fun getTaskFromFirebase() {
@@ -161,5 +170,4 @@ class HomeFragment : Fragment(), ToDoDialogFragment.OnDialogNextBtnClickListener
             ToDoDialogFragment.TAG
         )
     }
-
 }

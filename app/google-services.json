@@ -1,33 +1,79 @@
 {
   "project_info": {
-    "project_number": "108293983835",
-    "project_id": "kotlin-todo-33c15",
-    "storage_bucket": "kotlin-todo-33c15.appspot.com"
+    "project_number": "190469227499",
+    "firebase_url": "https://todoapp-7fc35-default-rtdb.firebaseio.com",
+    "project_id": "todoapp-7fc35",
+    "storage_bucket": "todoapp-7fc35.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:108293983835:android:88c1b7fc5466a74377397e",
+        "mobilesdk_app_id": "1:190469227499:android:e3f2e084052a473b5d4fae",
         "android_client_info": {
           "package_name": "com.example.kotlintodopractice"
         }
       },
       "oauth_client": [
         {
-          "client_id": "108293983835-opoofr0a9ht9pep6l6og61pie4s76hgi.apps.googleusercontent.com",
+          "client_id": "190469227499-5klvdld79f0o5af9pb81n2ced5kfk0sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kotlintodopractice",
+            "certificate_hash": "5f2c3e4e81a977d3b417c2c2f20f5b32ac0da453"
+          }
+        },
+        {
+          "client_id": "190469227499-bbddge7mp08ecuquu8tsigc3r70iici3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA9UoyeuMvhNsoUnsmgYL7YFfuwjkinPXQ"
+          "current_key": "AIzaSyDFH-91w7PrmMmsveuD3gwbfXavG7ntHQ8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "108293983835-opoofr0a9ht9pep6l6og61pie4s76hgi.apps.googleusercontent.com",
+              "client_id": "190469227499-bbddge7mp08ecuquu8tsigc3r70iici3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190469227499:android:ac1beed4a8d437d55d4fae",
+        "android_client_info": {
+          "package_name": "com.example.tasktracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190469227499-2v0t4ht27sn02div2lc9i0ftp414c917.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tasktracker",
+            "certificate_hash": "5f2c3e4e81a977d3b417c2c2f20f5b32ac0da453"
+          }
+        },
+        {
+          "client_id": "190469227499-bbddge7mp08ecuquu8tsigc3r70iici3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFH-91w7PrmMmsveuD3gwbfXavG7ntHQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190469227499-bbddge7mp08ecuquu8tsigc3r70iici3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,11 +1,12 @@
-package com.example.kotlintodopractice.utils.adapter
+package com.example.tasktracker.utils.adapter
 
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kotlintodopractice.databinding.EachTodoItemBinding
-import com.example.kotlintodopractice.utils.model.ToDoData
+
+import com.example.tasktracker.utils.model.ToDoData
+import com.example.tasktracker.databinding.EachTodoItemBinding
 
 class TaskAdapter(private val list: MutableList<ToDoData>) : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
 
@@ -26,7 +27,6 @@ class TaskAdapter(private val list: MutableList<ToDoData>) : RecyclerView.Adapte
         with(holder) {
             with(list[position]) {
                 binding.todoTask.text = this.task
-
                 Log.d(TAG, "onBindViewHolder: "+this)
                 binding.editTask.setOnClickListener {
                     listener?.onEditItemClicked(this , position)

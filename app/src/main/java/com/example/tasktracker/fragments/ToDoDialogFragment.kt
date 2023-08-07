@@ -1,19 +1,19 @@
-package com.example.kotlintodopractice.fragments
+package com.example.tasktracker.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
-import com.example.kotlintodopractice.R
-import com.example.kotlintodopractice.databinding.FragmentToDoDialogBinding
-import com.example.kotlintodopractice.utils.model.ToDoData
+
+import com.example.tasktracker.utils.model.ToDoData
+import com.example.tasktracker.databinding.FragmentToDoDialogBinding
 import com.google.android.material.textfield.TextInputEditText
 
 
 class ToDoDialogFragment : DialogFragment() {
 
-    private lateinit var binding:FragmentToDoDialogBinding
+    private lateinit var binding: FragmentToDoDialogBinding
     private var listener : OnDialogNextBtnClickListener? = null
     private var toDoData: ToDoData? = null
 
